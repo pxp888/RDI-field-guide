@@ -18,17 +18,28 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 400;
     padding: 1rem;
+    background-color: black;
+    /* background-color: rgb(120,119,105); */
+    color: rgb(240,238,211);
+    width:max-content;
 }
 
 p {
     padding: 1rem;
 }
 
+/* menu stuff */
+
+#menu {
+    position: fixed;
+    width: 100%;
+}
+
 #menu div {
-    width: 20%;
+    width: 25%;
     padding: 20px;
     float:left;
     background-color: rgb(240,238,211);
@@ -43,7 +54,7 @@ p {
 }
 
 #menu .active {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgb(120,119,105);
     color: rgb(240,238,211);
 }
 
@@ -56,19 +67,23 @@ p {
     clear: both;
     font-size: 140%;
 	/* margin-left: 30px; */
+    
     padding: 150px;
     color: black;
 }
 
+/* image */
+
 #cover-outer {
-	height: 600px;
+	height: 800px;
 	width: 100%;
+    object-fit: fill;
 	overflow: hidden;
 	position: relative;
 }
 
 #cover-image {
-	height: 600px;
+	height: 800px;
 	width: 100%;
 	background: url('../images/coverphoto.webp') no-repeat center center;
 
