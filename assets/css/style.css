@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;;
+    text-decoration: none;
+    background-color: rgb(240,238,211);
+}
+
+
+h1, h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: black;
+}
+
+#menu {
+    width: 100%;
+}
+
+#menu div {
+    width: 20%;
+    float: left;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+#menu div a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu div:hover {
+	background-color: black;
+    color: rgb(240,238,211);
+}
+
+.active {
+	background-color: rgba(0,0,0,.75);
+    color: rgb(240,238,211);
+}
+
+
+#logo {
+    float: left;
+	font-size: 120%;
+	text-decoration: none;
+    margin: 7rem;
+    width: 100%;
+}
+
+#cover-outer {
+	height: 700px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#cover-image {
+	height: 700px;
+	width: 100%;
+	background: url('../images/coverphoto.webp') no-repeat center center;
+
+	animation-name: hero-zoom;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+#cover-text {
+    font-size: 150%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px;
+    color: rgb(240,238,211);
+    text-transform: uppercase;
+}
