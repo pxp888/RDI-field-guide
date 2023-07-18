@@ -76,3 +76,24 @@ The use of wrapping flexbox containers allowed for minimal adjustments for small
 ![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-4.webp)
 
 
+# Validation
+The code was tweaked so that no errors or warnings were encountered in either the HTML or CSS files when run through the official W3C validators.  
+
+I do have one concern regarding the validation step though.  I had previously used sections to partition some areas of the HTML code.  For example, I had a footer section as below:
+~~~
+<section id="footer">
+	<!-- footer code here -->
+</section>
+~~~
+The validator warned that there were no heading elements present, and that I should use div elements instead.  
+This was implemented, which had no impact on working code but it seemed semantically less clear than having the footer in it's own section.  
+
+# Sources used
+### "Love Running" example code
+A lot of the code for the display of images, and the captioning on top of them was inspired by the "Love Running" example code from Code Institute.  
+
+### Site source material
+The source material for the site was from a PDF document created by Marc Schulze, the general manager of Rainforest Distillery, Inc.  I did have personal input on the original document, but the vast majority of the content and credit for said content is due to Marc Schulze.  
+
+This site was created with his permission and support.  
+
