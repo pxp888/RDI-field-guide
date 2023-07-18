@@ -65,7 +65,7 @@ p {
 }
 
 .highlight {
-    font-size: 250%;
+    font-size: 150%;
     font-style: italic;
 }
 
@@ -126,22 +126,29 @@ p {
 /* ################################## home image ################################ */
 
 #cover-outer {
-	height: 900px;
-	/* width: 100%; */
+	height: 75vw;
 	overflow: hidden;
 	position: relative;
-    
 }
 
 #cover-image {
-	width: 100%;
-    min-height: 400px;
-    position: absolute;
-    top: 0;
-
+    width: 100%;
+    /* min-height: 400px; */
+    
 	animation-name: hero-zoom;
 	animation-duration: 10s;
 	animation-fill-mode: forwards;
+}
+
+#cover-text {
+    padding: 30px;
+	background-color: var(--highcolor);
+	color: antiquewhite;
+    position: absolute;
+	
+    bottom: 0;
+	left: 0px;
+    width: 100%;
 }
 
 @keyframes hero-zoom {
@@ -151,17 +158,6 @@ p {
 	100% {
 		transform: scale(1.1);
 	}
-}
-
-#cover-text {
-    padding: 30px;
-	background-color: var(--highcolor);
-
-	bottom: 30px;
-	/* left: 150px; */
-
-	position: absolute;
-	color: antiquewhite;
 }
 
 /* ################################## home text ################################ */
@@ -278,14 +274,14 @@ p {
 
 #intro-outer {
     width: 100%;
-    height: 600px;
+    height: 70vw;
     overflow: hidden;
     position: relative;
 }
 
 #introphoto1 {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
 
     animation-name: hero-zoom;
@@ -391,6 +387,7 @@ p {
     .intro-body {columns: 1; }
     .market-body {columns: 1;   }
     .branding-body {columns: 1;   }
+    /* #cover-text {bottom: 0;} */
 }
 
 
