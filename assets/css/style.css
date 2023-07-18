@@ -126,7 +126,7 @@ p {
 /* ################################## home image ################################ */
 
 #cover-outer {
-	height: 700px;
+	height: 900px;
 	/* width: 100%; */
 	overflow: hidden;
 	position: relative;
@@ -136,6 +136,8 @@ p {
 #cover-image {
 	width: 100%;
     min-height: 400px;
+    position: absolute;
+    top: 0;
 
 	animation-name: hero-zoom;
 	animation-duration: 10s;
@@ -363,18 +365,32 @@ p {
     width: 100%;
 }
 
+#bottle-outer {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+#bottle-closeup {
+    width: 100%;
+    animation-name: hero-zoom;
+	animation-duration: 10s;
+	animation-fill-mode: forwards;
+}
+
 .img-label {
     border-bottom: 1px solid black;
 }
 
+
+
 /* ################################## media querries ################################ */
 
 
-@media screen and (max-width: 1000px) {
-    .intro-body {columns: 1;    }
+@media screen and (max-width: 1200px) {
+    .intro-body {columns: 1; }
     .market-body {columns: 1;   }
     .branding-body {columns: 1;   }
-    #cover-outer {height: 400px;}
 }
 
 
