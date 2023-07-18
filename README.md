@@ -35,7 +35,44 @@ The website is a obviously a work-in-progress, but will improve as I do.
 
 (disclosure: I am one of the partners in this distillery.)
 
-## Next steps
-The content for this site was generated in 2018, at a time when the primary goal was to secure funding for production.  As this has been accomplished, the content has to be updated with marketing material as a priority.  
+# Design
+The final design will be updated, but for this site I've chosen to maintain a consistent color theme that is largely monotone with a single highlight color.  
 
-The creation of marketing materials and design choices are still in progress, but will hopefully be finalized soon.  
+# Features
+There are four static site pages, Home, Introduction, Marketing Direction, and Branding. 
+Lastly there is a contact page for receiving messages.  
+
+## Header
+There is a consistent header at the top of each page.  This shows the company name and logo at the top, and a navigation bar below that.  
+The navigation links react to mouse hovering, and the current page is indicated by a highlight color with partial opacity.  
+
+![logo](https://pxp888.github.io/RDI-field-guide/assets/images/rm-1.webp)
+
+*For example, the image above shows the header when looking at the contact page of the site.*
+
+## Homepage
+The homepage is largely a single image, which has a slow zoom effect (taken from the "love running" example website).  
+There are some short textual descriptions of the product.  
+
+![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-2.webp)
+
+
+## Introduction, Marketing Direction, and Branding Pages
+
+These are all static pages with relevant information presented.  
+
+## Contact page
+The final site page is a contact page for receiving messages.  
+
+![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-3.webp)
+
+
+# Footer
+Lastly, we have a consistent footer throughout the site.  This simply shows social media links, along with a copyright notice.  
+
+# Screen Size considerations
+The use of wrapping flexbox containers allowed for minimal adjustments for smaller screens.  A single CSS media query with four lines of adjustments are required to maintain readability on smaller screens.  
+
+![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-4.webp)
+
+
