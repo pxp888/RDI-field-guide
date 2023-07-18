@@ -116,19 +116,14 @@ p {
 /* ################################## home image ################################ */
 
 #cover-outer {
-    flex: 1;
-	height: 800px;
-	width: 100%;
-    object-fit: fill;
+	height: 700px;
+	/* width: 100%; */
 	overflow: hidden;
 	position: relative;
 }
 
 #cover-image {
-	height: 800px;
 	width: 100%;
-	background: url('../images/coverphoto.webp') no-repeat center center;
-
 	animation-name: hero-zoom;
 	animation-duration: 10s;
 	animation-fill-mode: forwards;
@@ -144,9 +139,9 @@ p {
 }
 
 #cover-text {
-	font-size: 130%;
+	/* font-size: 130%; */
 	/* text-transform: uppercase; */
-	letter-spacing: 4px;
+	/* letter-spacing: 4px; */
 	
     padding: 30px;
 	background-color: rgba(241, 109, 107, .7);
@@ -243,7 +238,7 @@ p {
 }
 
 .text-input:hover {
-    border-color: #f16c6b;
+    border-color: rgba(241, 109, 107, 1);
 }
 
 .join-button {
@@ -252,14 +247,14 @@ p {
     padding: 15px 32px 15px 32px;
     text-align: center;
     font-size: 100%;
-    background-color: #f16c6b;
+    background-color: rgba(241, 109, 107, 1);
     color: #fafafa;
     display: block;
 }
 
 .join-button:hover {
     background-color: #fafafa;
-    color: #f16c6b;
+    color: rgba(241, 109, 107, 1);
 }
 
 /* ################################## introduction ################################ */
@@ -323,6 +318,7 @@ p {
 .market-body {
     flex: 3;
     columns: 2;
+    margin-top: 1rem;
 }
 
 #marketgraph {
@@ -355,6 +351,9 @@ p {
     width: 100%;
 }
 
+.img-label {
+    border-bottom: 1px solid black;
+}
 
 /* ################################## media querries ################################ */
 
@@ -364,7 +363,7 @@ p {
     .market-body {columns: 1;   }
     .branding-body {columns: 1;   }
     #cover-outer {height: 400px;}
-    #cover-image {height: 400px;}
+    /* #cover-image {height: 400px;} */
 }
 
 
