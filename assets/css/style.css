@@ -302,17 +302,16 @@ p {
 /* ################################## marketing ################################ */
 
 #agingroom-outer {
-    /* flex: 1; */
-    height: 700px;
-    width: 100%;
+    flex: 1;
+    min-height: 400px;
+    
     overflow: hidden;
     position: relative;
 }
 
 #agingroom {
-    width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
 
     animation-name: hero-zoom;
 	animation-duration: 10s;
@@ -324,7 +323,7 @@ p {
     color:antiquewhite;
     position: absolute;
     /* left: 4rem; */
-    top: 4rem;
+    bottom: 4rem;
 }
 
 .market-body {
