@@ -1,5 +1,5 @@
 
-![logo](https://pxp888.github.io/RDI-field-guide/assets/images/rdilogo-02.webp)
+![logo](https://pxp888.github.io/RDI-field-guide/assets/images/rdilogo-02.png)
 
 # Rainforest Distillers, Inc. 
 [Site Page](https://pxp888.github.io/RDI-field-guide/)
