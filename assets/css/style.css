@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --highcolor: rgba(241, 109, 107, .7);
+    --activecolor: rgba(241, 109, 107, .5);
+
+    /* --highcolor: rgba(31,128,39, 0.7);
+    --activecolor: rgba(31,128,39, .5); */
+
+    /* --highcolor: rgba(218,72,4, 0.7);
+    --activecolor: rgba(218,72,4, .5); */
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -38,7 +49,7 @@ h3 {
     font-size: 1.4rem;
     font-weight: 700;
     margin: 1rem;
-    background-color: rgba(241, 109, 107, .7);
+    background-color: var(--highcolor);
     color: antiquewhite;
     /* width: max-content; */
     width: fit-content;
@@ -86,7 +97,7 @@ p {
 }
 
 #header:hover {
-    color: rgba(241, 109, 107, .7);
+    color: var(--highcolor);
 }
 
 #menu {
@@ -103,13 +114,12 @@ p {
 }
 
 #menu div:hover {
-    /* background-color: black; */
-    background-color: rgba(241, 109, 107, .7);
+    background-color: var(--highcolor);
     color: antiquewhite;
 }
 
 .active {
-    background-color: rgba(241, 109, 107, .5);
+    background-color: var(--activecolor);
     color: antiquewhite;
 }
 
@@ -139,18 +149,14 @@ p {
 }
 
 #cover-text {
-	/* font-size: 130%; */
-	/* text-transform: uppercase; */
-	/* letter-spacing: 4px; */
-	
     padding: 30px;
-	background-color: rgba(241, 109, 107, .7);
+	background-color: var(--highcolor);
 
 	bottom: 50px;
-	right: 150px;
+	/* left: 150px; */
 
 	position: absolute;
-	color: white;
+	color: antiquewhite;
 }
 
 /* ################################## home text ################################ */
@@ -170,7 +176,7 @@ p {
     height: min-content;
     text-align: center;
     padding: 10px;
-    background-color: rgba(241, 109, 107, .7);
+    background-color: var(--highcolor);
     color: antiquewhite;
 }
 
@@ -238,7 +244,7 @@ p {
 }
 
 .text-input:hover {
-    border-color: rgba(241, 109, 107, 1);
+    border-color: var(--highcolor)
 }
 
 .join-button {
@@ -247,31 +253,34 @@ p {
     padding: 15px 32px 15px 32px;
     text-align: center;
     font-size: 100%;
-    background-color: rgba(241, 109, 107, 1);
+    background-color: var(--highcolor);
     color: #fafafa;
     display: block;
 }
 
 .join-button:hover {
     background-color: #fafafa;
-    color: rgba(241, 109, 107, 1);
+    color: var(--highcolor);
 }
 
 /* ################################## introduction ################################ */
 
 
-#intro-body {
+.intro-body {
     flex: 1;
     columns: 2;
 }
 
 #intro-outer {
     width: 100%;
+    height: 600px;
     overflow: hidden;
     position: relative;
 }
 
 #introphoto1 {
+    position: absolute;
+    bottom: 0;
     width: 100%;
 
     animation-name: hero-zoom;
@@ -280,7 +289,7 @@ p {
 }
 
 #intro-quote {
-    background-color: rgba(241, 109, 107, .7);
+    background-color: var(--highcolor);
     color:antiquewhite;
     position: absolute;
     left: 4rem;
@@ -290,8 +299,8 @@ p {
 /* ################################## marketing ################################ */
 
 #agingroom-outer {
-    flex: 1;
-    height: 400px;
+    /* flex: 1; */
+    height: 700px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -308,7 +317,7 @@ p {
 }
 
 #market-quote {
-    background-color: rgba(241, 109, 107, .7);
+    background-color: var(--highcolor);
     color:antiquewhite;
     position: absolute;
     left: 4rem;
@@ -359,11 +368,10 @@ p {
 
 
 @media screen and (max-width: 1000px) {
-    #intro-body {columns: 1;    }
+    .intro-body {columns: 1;    }
     .market-body {columns: 1;   }
     .branding-body {columns: 1;   }
     #cover-outer {height: 400px;}
-    /* #cover-image {height: 400px;} */
 }
 
 
