@@ -4,11 +4,11 @@
     --highcolor: rgba(241, 109, 107, .7);
     --activecolor: rgba(241, 109, 107, .5);
 
-    /* --highcolor: rgba(31,128,39, 0.7);
-    --activecolor: rgba(31,128,39, .5); */
+    /* --highcolor: rgba(97,164,102, 0.7);
+    --activecolor: rgba(97,164,102, .5); */
 
-    /* --highcolor: rgba(218,72,4, 0.7);
-    --activecolor: rgba(218,72,4, .5); */
+    /* --highcolor: rgba(236,120,69, 0.7);
+    --activecolor: rgba(236,120,69, 0.5); */
 }
 
 * {
@@ -292,7 +292,7 @@ p {
     background-color: var(--highcolor);
     color:antiquewhite;
     position: absolute;
-    left: 4rem;
+    /* left: 4rem; */
     top: 4rem;
 }
 
@@ -320,7 +320,7 @@ p {
     background-color: var(--highcolor);
     color:antiquewhite;
     position: absolute;
-    left: 4rem;
+    /* left: 4rem; */
     top: 4rem;
 }
 
