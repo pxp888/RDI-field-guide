@@ -15,4 +15,6 @@ Hopefully that will change in the future!
 ___(Update : The company is in production, and the first batch of rum will be bottled in late 2023!)___
 
 The website is a obviously a work-in-progress, but will improve as I do.  
+(disclosure: I am one of four partners in this distillery.)
+
 
