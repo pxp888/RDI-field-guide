@@ -328,6 +328,7 @@ p {
     flex: 3;
     columns: 2;
     margin-top: 1rem;
+    border-bottom: 1px solid black;
 }
 
 #marketgraph {
