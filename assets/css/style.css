@@ -42,11 +42,19 @@ p {
     padding: 5px 10px;
     margin: 20px 20px 0px 20px;
     border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#logo {
+    flex: 0;
+    height: 70px;
 }
 
 #header:hover {
-    background-color: rgba(241, 109, 107, .7);
-    color: antiquewhite;
+    color: rgba(241, 109, 107, .7);
 }
 
 #menu {
