@@ -1,7 +1,7 @@
 
   
 
-![logo](https://pxp888.github.io/RDI-field-guide/assets/images/rdilogo-02.png)
+![screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/screens1.webp)
 
   
 
