@@ -53,9 +53,7 @@ The website is a obviously a work-in-progress, but will improve as I do.
 
 [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-[Validation](#validation)
-
-[Testing](#testing)
+[Validation & Testing](#validation--testing)
 
 [Deployment](#deployment)
 
@@ -132,11 +130,8 @@ This site was created with his permission and support.
 |GitHub|Code repository|
 |Font Awesome|Font and icon library|
 
-# Validation
+# Validation & Testing
 The code was tweaked so that no errors or warnings were encountered in either the HTML or CSS files when run through the official W3C validators.  
-
-# Testing
-The site was passed through the official W3C validators for HTML and CSS, and no errors or warnings were encountered.
 
 Manual testing also revealed no unexpected behavior.
 
