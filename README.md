@@ -35,6 +35,33 @@ The website is a obviously a work-in-progress, but will improve as I do.
 
 (disclosure: I am one of the partners in this distillery.)
 
+
+## Table of Contents
+[Design](#design)
+
+[Features](#features)
+* [Header](#header)
+* [Homepage](#homepage)
+* [Introduction, Marketing Direction, and Branding Pages](#introduction-marketing-direction-and-branding-pages)
+* [Contact page](#contact-page)
+* [Footer](#footer)
+[Screen Size considerations](#screen-size-considerations)
+
+[Sources used](#sources-used)
+
+[Technologies Used](#technologies-used)
+
+[Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
+
+[Validation](#validation)
+
+[Testing](#testing)
+
+[Deployment](#deployment)
+
+<br>
+
+
 # Design
 The site has a consistent color theme that is a tinted monotone with a single highlight color.  
 
@@ -67,7 +94,7 @@ The final site page is a contact page for receiving messages.
 ![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-3.webp)
 
 
-# Footer
+## Footer
 Lastly, we have a consistent footer throughout the site.  This simply shows social media links, along with a copyright notice.  
 
 # Screen Size considerations
