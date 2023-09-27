@@ -108,6 +108,12 @@ This site was created with his permission and support.
 # Validation
 The code was tweaked so that no errors or warnings were encountered in either the HTML or CSS files when run through the official W3C validators.  
 
+# Testing
+The site was passed through the official W3C validators for HTML and CSS, and no errors or warnings were encountered.
+
+Manual testing also revealed no unexpected behavior.
+
+
 # Deployment
 The site is hosted on GitHub pages, and is deployed from the master branch.
 
