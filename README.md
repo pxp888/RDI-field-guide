@@ -16,7 +16,7 @@
 
 ## Table of Contents
 
-*   [__what it is - Field guide for potential investors__](#what-it-is---field-guide-for-potential-investors)
+*   [__what is it - Field guide for potential investors__](#what-is-it---field-guide-for-potential-investors)
 *   [__Design__](#design)
 *   [__Features__](#features)
     * [Header](#header)
@@ -34,7 +34,7 @@
 <br>
 
 
-## what it is - Field guide for potential investors
+## what is it - Field guide for potential investors
 
   
 
@@ -56,7 +56,7 @@ ___(Update : The company is in production, and the first batch of rum will be bo
 
 The website is a obviously a work-in-progress, but will improve as I do.
 
-(disclosure: I am one of the partners in this distillery.)
+_(disclosure: I am one of the partners in this distillery.)_
 
 # Design
 The site has a consistent color theme that is a tinted monotone with a single highlight color.  
@@ -133,6 +133,10 @@ This site was created with his permission and support.
 
 # Validation & Testing
 The code was tweaked so that no errors or warnings were encountered in either the HTML or CSS files when run through the official W3C validators.  
+
+__Validators Used:__
+*   [W3C Markup Validator](https://validator.w3.org/)
+*   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 Manual testing also revealed no unexpected behavior.
 
