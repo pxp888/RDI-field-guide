@@ -11,7 +11,30 @@
 
   
 
-## Field guide for potential investors
+
+
+
+## Table of Contents
+
+*   [__what it is - Field guide for potential investors__](#what-it-is---field-guide-for-potential-investors)
+*   [__Design__](#design)
+*   [__Features__](#features)
+    * [Header](#header)
+    * [Homepage](#homepage)
+    * [Introduction, Marketing Direction, and Branding Pages](#introduction-marketing-direction-and-branding-pages)
+    * [Contact page](#contact-page)
+    * [Footer](#footer)
+    * [Screen Size considerations](#screen-size-considerations)
+*   [__Sources used__](#sources-used)
+*   [__Technologies Used__](#technologies-used)
+*   [__Frameworks, Libraries & Programs Used__](#frameworks-libraries--programs-used)
+*   [__Validation & Testing__](#validation--testing)
+*   [__Deployment__](#deployment)
+
+<br>
+
+
+## what it is - Field guide for potential investors
 
   
 
@@ -34,31 +57,6 @@ ___(Update : The company is in production, and the first batch of rum will be bo
 The website is a obviously a work-in-progress, but will improve as I do.
 
 (disclosure: I am one of the partners in this distillery.)
-
-
-## Table of Contents
-[Design](#design)
-
-[Features](#features)
-* [Header](#header)
-* [Homepage](#homepage)
-* [Introduction, Marketing Direction, and Branding Pages](#introduction-marketing-direction-and-branding-pages)
-* [Contact page](#contact-page)
-* [Footer](#footer)
-[Screen Size considerations](#screen-size-considerations)
-
-[Sources used](#sources-used)
-
-[Technologies Used](#technologies-used)
-
-[Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
-
-[Validation & Testing](#validation--testing)
-
-[Deployment](#deployment)
-
-<br>
-
 
 # Design
 The site has a consistent color theme that is a tinted monotone with a single highlight color.  
@@ -109,6 +107,9 @@ The use of wrapping flexbox containers allowed for minimal adjustments for small
 ### "Love Running" example code
 The code for the display of images, and the captioning on top of them was inspired by the "Love Running" example code from Code Institute.  
 
+The contact form was also inspired by the "Love Running" example code.
+
+
 ### Site Design source material
 The source material for the site was from a PDF document created by Marc Schulze, the general manager of Rainforest Distillery, Inc.  I did have personal input on the original document, but the vast majority of the content and credit for said content is due to Marc Schulze.  
 
@@ -138,6 +139,26 @@ Manual testing also revealed no unexpected behavior.
 
 # Deployment
 The site is hosted on GitHub pages, and is deployed from the master branch.
+
+The site can be viewed at [https://pxp888.github.io/RDI-field-guide/](https://pxp888.github.io/RDI-field-guide/)
+
+### Forking the GitHub Repository
+By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
+
+1.  Log in to GitHub and locate GitHub Repository [RDI-field-guide](https://github.com/pxp888/RDI-field-guide)
+2.  At the top of the Repository(under the main navigation) locate "Fork" button.
+3.  Now you should have a copy of the original repository in your GitHub account.
+
+### Local Clone
+
+1.  Log in to GitHub and locate GitHub Repository [RDI-field-guide](https://github.com/pxp888/RDI-field-guide)
+2.  Under the repository name click "Clone or download"
+3.  Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4.  Open Git Bash
+5.  Change the current working directory to the location where you want the cloned directory to be made.
+6.  Type git clone and then paste The URL copied in the step 3.
+7.  Press Enter and your local clone will be created.
+
 
 
 
