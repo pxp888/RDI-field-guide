@@ -144,7 +144,10 @@ Manual testing also revealed no unexpected behavior.
 # Deployment
 The site is hosted on GitHub pages, and is deployed from the master branch.
 
+As the site is essentially five static pages, Github Pages is sufficient for hosting the site and fulfilling required functionality.  
+
 The site can be viewed at [https://pxp888.github.io/RDI-field-guide/](https://pxp888.github.io/RDI-field-guide/)
+
 
 ### Forking the GitHub Repository
 By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
