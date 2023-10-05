@@ -9,10 +9,6 @@
 
 [Site Page](https://pxp888.github.io/RDI-field-guide/)
 
-  
-
-
-
 
 ## Table of Contents
 
@@ -25,7 +21,9 @@
     * [Contact page](#contact-page)
     * [Footer](#footer)
     * [Screen Size considerations](#screen-size-considerations)
-*   [__Sources used__](#sources-used)
+*   [__Credit and Sources used__](#credit-and-sources-used)
+    * ["Love Running" example code](#love-running-example-code)
+    * [Site Design source material](#site-design-source-material)
 *   [__Technologies Used__](#technologies-used)
 *   [__Frameworks, Libraries & Programs Used__](#frameworks-libraries--programs-used)
 *   [__Validation & Testing__](#validation--testing)
@@ -103,7 +101,7 @@ The use of wrapping flexbox containers allowed for minimal adjustments for small
 
 
 
-# Sources used
+# Credit and Sources used
 ### "Love Running" example code
 The code for the display of images, and the captioning on top of them was inspired by the "Love Running" example code from Code Institute.  
 
@@ -121,6 +119,7 @@ This site was created with his permission and support.
 
 * HTML5
 * CSS3
+<br>
 
 ## Frameworks, Libraries & Programs Used
 
@@ -130,6 +129,7 @@ This site was created with his permission and support.
 |Git |Version control|
 |GitHub|Code repository|
 |Font Awesome|Font and icon library|
+<br>
 
 # Validation & Testing
 The code was tweaked so that no errors or warnings were encountered in either the HTML or CSS files when run through the official W3C validators.  
