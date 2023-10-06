@@ -344,6 +344,8 @@ p {
 
 #kana-logo {
     width: 100%;
+    object-fit: contain;
+    max-height: 40vh;
 }
 
 .branding-body {
@@ -372,6 +374,10 @@ p {
     animation-name: hero-zoom;
 	animation-duration: 10s;
 	animation-fill-mode: forwards;
+
+    max-height: 50vh;
+    object-fit:none
+
 }
 
 .img-label {
