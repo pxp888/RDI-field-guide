@@ -328,11 +328,15 @@ p {
 #marketgraph {
     width: 90%;
     margin: 2rem;
+    max-height: 100vh;
+    object-fit: contain;
 }
 
 #volumegraph {
     width: 90%;
     margin: 2rem;
+    max-height: 100vh;
+    object-fit: contain;
 }
 
 
