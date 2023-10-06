@@ -113,7 +113,9 @@ The final site page is a contact page for receiving messages.
 Lastly, we have a consistent footer throughout the site.  This simply shows social media links, along with a copyright notice.  
 
 # Screen Size considerations
-The use of wrapping flexbox containers allowed for minimal adjustments for smaller screens.  A single CSS media query with four lines of adjustments are required to maintain readability on smaller screens.  
+The majority of the site responsiveness is provided by using flexbox containers.  With the correct wrapping and sizing, the majority of the site is responsive and fluid.  
+
+There are still some changes implemented through media querries for smaller screens. The main change is that two-column layouts are changed to single column layouts on certain pages.
 
 ![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-4.webp)
 
@@ -175,7 +177,7 @@ The only media querries here are to turn some pages from two columns to one.  Ot
 
 Getting this close to what I was aiming for was a good learning experience as to how difficult good design is when dealing with multiple screen sizes.  
 
-_(This is an area that requires further study and practice on my part. While I was able to achieve something I am happy with, I am not able to exactly match the style of the original document across all screen sizes.  I am sure that this is possible, but I am not yet able to do so.)_
+_(This is an area that requires further study and practice on my part. While I was able to achieve something I am happy with, I am not able to exactly match the style of the original document across all screen sizes.)_
 
 ## Lighthouse report results
 
