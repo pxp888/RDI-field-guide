@@ -27,10 +27,16 @@
 *   [__Technologies Used__](#technologies-used)
 *   [__Frameworks, Libraries & Programs Used__](#frameworks-libraries--programs-used)
 *   [__Validation & Testing__](#validation--testing)
+    * [HTML](#html)
+    * [CSS](#css)
+    * [Lighthouse report results](#lighthouse-report-results)
+        * [Performance Issues](#performance-issues)
+        * [Accessibility Issues](#accessibility-issues)
 *   [__Deployment__](#deployment)
+    * [Forking the GitHub Repository](#forking-the-github-repository)
+    * [Local Clone](#local-clone)
 
 <br>
-
 
 ## what is it - Field guide for potential investors
 
@@ -147,7 +153,7 @@ This site was created with his permission and support.
 <br>
 
 # Validation & Testing
-The code was tweaked so that no errors or warnings were encountered in either the HTML or CSS files when run through the official W3C validators.  
+The code was reviewed so that no errors or warnings were encountered in either the HTML or CSS files when run through the official W3C validators.  
 
 __Validators Used:__
 *   [W3C Markup Validator](https://validator.w3.org/)
@@ -171,7 +177,7 @@ Getting this close to what I was aiming for was a good learning experience as to
 
 _(This is an area that requires further study and practice on my part. While I was able to achieve something I am happy with, I am not able to exactly match the style of the original document across all screen sizes.  I am sure that this is possible, but I am not yet able to do so.)_
 
-### Lighthouse report results
+## Lighthouse report results
 
 I was able to achieve a 100% score for performance for  both Desktop and Mobile sites, but there were some issues that remain.  
 
