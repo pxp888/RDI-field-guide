@@ -326,11 +326,13 @@ p {
 }
 
 #marketgraph {
-    width: 100%;
+    width: 90%;
+    margin: 2rem;
 }
 
 #volumegraph {
-    width: 100%;
+    width: 90%;
+    margin: 2rem;
 }
 
 
