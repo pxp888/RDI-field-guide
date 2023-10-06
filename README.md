@@ -57,7 +57,22 @@ The website is a obviously a work-in-progress, but will improve as I do.
 _(disclosure: I am one of the partners in this distillery.)_
 
 # Design
-The site has a consistent color theme that is a tinted monotone with a single highlight color.  
+The site has a consistent color theme that is a tinted monotone with a single highlight color.  The original document that inspired the site design has a monochromatic color scheme.  This worked very well on paper, but was not as effective on a screen. For this reason I added a single highlight color to the site.
+
+Otherwise, font and layout choices were largely inspired by the original document.  Below are some images from the original document to demonstrate.  
+
+![Original cover](assets/images/original-3.png)
+_Original Cover_
+
+![Original toc](assets/images/original-1.png)
+_Original Table of Contents_
+
+![Original content](assets/images/original-2.png)
+_Original Content Sample_
+
+All photos used for the site also came from the original document. 
+
+
 
 # Features
 There are four static site pages, Home, Introduction, Marketing Direction, and Branding. 
