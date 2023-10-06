@@ -153,7 +153,41 @@ __Validators Used:__
 *   [W3C Markup Validator](https://validator.w3.org/)
 *   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
-Manual testing also revealed no unexpected behavior.
+### HTML 
+The HTML code in this project is comparatively simple, and the primary functionality testing is to ensure that the links work as expected.  
+
+For local links this is done by clicking on each link and ensuring that the correct page is loaded.  
+
+For external links, this is done by clicking on each link and ensuring that the correct page is loaded in a new tab.
+
+### CSS 
+The CSS testing is much more involved.  While I was sure that no piece of CSS code would break functionality, it is much harder to ensure that the site looks good on all screen sizes.  
+
+The majority of time spent personally testing was done using Chrome Devtools to simulate different screen sizes and devices.  This was done by using the "Responsive" option in the devtools, and then selecting different screen sizes and devices.
+
+The only media querries here are to turn some pages from two columns to one.  Otherwise, the CSS code is consistent across all screen sizes.  
+
+Getting this close to what I was aiming for was a good learning experience as to how difficult good design is when dealing with multiple screen sizes.  
+
+_(This is an area that requires further study and practice on my part. While I was able to achieve something I am happy with, I am not able to exactly match the style of the original document across all screen sizes.  I am sure that this is possible, but I am not yet able to do so.)_
+
+### Lighthouse report results
+
+I was able to achieve a 100% score for performance for  both Desktop and Mobile sites, but there were some issues that remain.  
+
+_Desktop lighthouse score:_
+![Desktop lighthouse report](assets/images/lighthouse1.webp)
+
+_Mobile lighthouse score:_
+![Mobile lighthouse report](assets/images/lighthouse2.webp)
+
+#### Performance Issues
+
+While the desktop result seems promising, the mobile result is less so.  The main issue is that the images are too large, and this is causing a performance issue.
+
+#### Accessibility Issues
+There is a suggestion that the contrast ratio for some text is too low.  Primarily this is happening in the header nav menu, where the active tab is highlighted, and the copyright notice in the footer.  
+
 
 
 # Deployment
