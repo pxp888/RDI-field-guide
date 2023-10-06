@@ -265,7 +265,7 @@ p {
 
 /* ################################## introduction ################################ */
 
-.intro-body {
+.intro-body div {
     flex: 1;
     columns: 2;
 }
@@ -277,7 +277,7 @@ p {
     position: relative;
 }
 
-#introphoto1 {
+#intro-photo1 {
     width: 100%;
     animation-name: hero-zoom;
 	animation-duration: 10s;
@@ -376,7 +376,7 @@ p {
 /* ################################## media querries ################################ */
 
 @media screen and (max-width: 1200px) {
-    .intro-body {columns: 1; }
+    .intro-body div {columns: 1; }
     .market-body {columns: 1;   }
     .branding-body {columns: 1;   }
 }
