@@ -1,47 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
 
-        <!-- NAV MENU -->
-        <nav id="menu">
-            <div><a href="{{ url_for('index') }}">Home</a></div>
-            <div><a href="{{ url_for('introduction') }}">About</a></div>
-            <div><a href="{{ url_for('marketing') }}">Marketing</a></div>
-            <div><a href="{{ url_for('branding') }}">Branding</a></div>
-            <div class="active"><a href="{{ url_for('contact') }}">Contact us</a></div>
-        </nav>
+		<!-- NAV MENU -->
+		<nav id="menu">
+			<div><a href="{{ url_for('index') }}">Home</a></div>
+			<div><a href="{{ url_for('introduction') }}">About</a></div>
+			<div><a href="{{ url_for('marketing') }}">Marketing</a></div>
+			<div><a href="{{ url_for('branding') }}">Branding</a></div>
+			<div class="active"><a href="{{ url_for('contact') }}">Contact us</a></div>
+		</nav>
 
-        {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                <ul class="flashes">
-                    {% for message in messages %}
-                        <li>{{ message }}</li>
-                    {% endfor %}
-                </ul>
-            {% else %}
-                <p>hmmm</p>
-            {% endif %}
-        {% endwith %}
+		<div class="contact-area">
 
-        
-        <!-- CONTACT FORM -->
-        <section class="form-section">
-            <form method="POST" class="contact-form">
-                <h2>Contact Us</h2>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="first_name" class="text-input" required>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="last_name" class="text-input" required>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" class="text-input" required>
-                <label for="company-name">Company Name (optional)</label>
-                <input type="text" name="company-name" id="company-name" class="text-input">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" class="msgbox" rows="7"></textarea>
+			{% with messages = get_flashed_messages() %}
+				{% if messages %}                
+					{% for message in messages %}
+						<p>{{ message }}</p>
+					{% endfor %}
+				{% else %}
+					<p>Feel free to contact us below, </p>
+				{% endif %}
+			{% endwith %}
 
-                <button type="submit" class="join-button">Submit</button>
-            </form>
+			
+			<!-- CONTACT FORM -->
+			<section class="form-section">
+				<form method="POST" class="contact-form">
+					<h2>Contact Us</h2>
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="first_name" class="text-input" required>
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="last_name" class="text-input" required>
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" class="text-input" required>
+					<label for="company-name">Company Name (optional)</label>
+					<input type="text" name="company-name" id="company-name" class="text-input">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" class="msgbox" rows="7"></textarea>
 
-        </section>
+					<button type="submit" class="join-button">Submit</button>
+				</form>
+
+			</section>
+		</div>
 
 {% endblock %}
 

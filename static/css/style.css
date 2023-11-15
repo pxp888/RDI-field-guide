@@ -82,6 +82,7 @@ p {
     align-items: flex-end;
     justify-content: space-between;
     flex-wrap: nowrap;
+    transition: color 0.3s ease, color 0.3s ease;
 }
 
 #rdi-title {
@@ -91,7 +92,7 @@ p {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-}   
+}
 
 #logo {
     flex: 0;
@@ -124,6 +125,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #menu div:hover {
@@ -203,17 +205,26 @@ p {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+    transition: color 0.3s ease, color 0.3s ease;
+}
+
+.social-networks i:hover {
+    color: antiquewhite;
 }
 
 
 /* ################################## form section ################################ */
 
-.form-section {
+.contact-area {
     clear: left;
     background: url("../images/mountain.webp");
     background-size: cover;
     background-position: center;
-    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    justify-content: left;
+    padding: 30px;
 }
 
 .contact-form {
@@ -221,8 +232,7 @@ p {
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
     max-width: 400px;
-    position: absolute;
-    left: 10%;
+    
     padding: 30px;
 }
 
