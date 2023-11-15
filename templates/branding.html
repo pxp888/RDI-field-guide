@@ -1,36 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="RainForest Distillers Inc.">
-		<meta name="keywords" content="rum, rhum, agricole, bukidnon, philippines">
-
-		<link rel="stylesheet" href="assets/css/style.css">
-
-		<title>RainForest Distillers</title>
-	</head>
-
-	<body>
-        <!-- HEADER SECTION -->
-        <header id="header">
-            <a href="index.html" id="rdi"><h1>RainForest Distillers, Inc.</h1></a>
-            <img src="assets/images/rdilogo-02.png" alt="RainForest Distillers, Inc." id="logo">
-        </header>
-
-        <!-- NAV MENU -->
-        <nav id="menu">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="introduction.html">About</a></div>
-            <div><a href="marketing.html">Marketing</a></div>
-            <div class="active"><a href="branding.html">Branding</a></div>
-            <div><a href="contact.html">Contact</a></div>
-        </nav>
 
         <!-- MAIN CONTENT -->
         <section class="main">
-            <img src="assets/images/kana.webp" alt="kana logo" id="kana-logo">
+            <img src="{{ url_for('static', filename='images/kana.webp') }}" alt="kana logo" id="kana-logo">
             <p class="img-label">caña - caña de azúcar o dulce (BOTÁNICA) spanish translation of sugarcane.</p>
 
             <h2>Defining Philippine Agricole</h2>
@@ -62,7 +36,7 @@
                 <h3>Heirloom Strain</h3>
                 <p><strong>The ﬁrst of it’s kind, the only of its kind.</strong> Because we are using a speciﬁc heirloom strain of cane, our product’s ﬂavor notes will be unlike any product in the market today. Many breeding programs for modern hybrids have sacriﬁced taste and nutrition. Locally, hybrids (the vast majority of available strains) were bred to have high sugar content and an optimal return for the production of sugar due to the needs of the sugar industry. Unlike our heirloom strain, which naturally has a rich ﬂavor proﬁle (as with most heirloom varieties) and is ﬁlled with the enzymes and nutrients that give our fermentations a vigorously healthy and vividly tasty bubbling. This makes heirloom strains rare and hard to ﬁnd. They are our legacy, our heritage and our birthright.</p>
 
-                <img src="assets/images/flavorwheel.webp" alt="flavor wheel image" id="flavorwheel">
+                <img src="{{ url_for('static', filename='images/flavorwheel.webp') }}" alt="flavor wheel image" id="flavorwheel">
 
                 <h2>OUR OWN AGRIKULTURA</h2>
 
@@ -76,39 +50,9 @@
 
             <!-- LOWER IMAGE -->
             <div id="bottle-outer">
-                <img src="assets/images/kasakana2.jpeg" alt="bottle closeup" id="bottle-closeup">
+                <img src="{{ url_for('static', filename='images/kasakana2.jpeg') }}" alt="bottle closeup" id="bottle-closeup">
             </div>
 
         </section>
 
-        <!-- FOOTER SECTION -->
-        <div id="footer">
-            <ul class="social-networks">
-                <li>
-                    <a href="https://facebook.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
-                </li>
-                <li>
-                    <a href="https://youtube.com" target="_blank" rel="noopener"
-                        aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
-            <div id="footer-text">
-                <p>© 2017 RainForest Distillers, Inc.</p>
-            </div>
-        </div>
-
-        <!-- FONT SCRIPT -->
-        <script src="https://kit.fontawesome.com/acf70f284f.js" crossorigin="anonymous"></script>
-	</body>
-</html>
-
-
+{% endblock %}

@@ -7,7 +7,7 @@
 		<meta name="description" content="RainForest Distillers Inc.">
 		<meta name="keywords" content="rum, rhum, agricole, bukidnon, philippines">
 
-		<link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 
 		<title>RainForest Distillers</title>
 	</head>
@@ -15,38 +15,22 @@
 	<body>
         <!-- HEADER SECTION -->
         <header id="header">
-            <a href="index.html" id="rdi"><h1>RainForest Distillers, Inc.</h1></a>
-            <img src="assets/images/rdilogo-02.png" alt="RainForest Distillers, Inc." id="logo">
+            <a href="{{ url_for('index') }}" id="rdi"><h1>RainForest Distillers, Inc.</h1></a>
+            <img src="{{ url_for('static', filename='images/rdilogo-02.png')}}" alt="RainForest Distillers, Inc." id="logo">
         </header>
 
         <!-- NAV MENU -->
         <nav id="menu">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="introduction.html">About</a></div>
-            <div><a href="marketing.html">Marketing</a></div>
-            <div><a href="branding.html">Branding</a></div>
-            <div class="active"><a href="contact.html">Contact</a></div>
+            <div class="active"><a href="{{ url_for('index') }}">Home</a></div>
+            <div><a href="{{ url_for('introduction') }}">About</a></div>
+            <div><a href="{{ url_for('marketing') }}">Marketing</a></div>
+            <div><a href="{{ url_for('branding') }}">Branding</a></div>
+            <div><a href="{{ url_for('contact') }}">Contact us</a></div>
+
         </nav>
 
-        <!-- CONTACT FORM -->
-        <section class="form-section">
-            <form action="https://formdump.codeinstitute.net/" method="POST" class="contact-form">
-                <h2>Contact Us</h2>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="first_name" class="text-input" required>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="last_name" class="text-input" required>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" class="text-input" required>
-                <label for="company-name">Company Name (optional)</label>
-                <input type="text" name="company-name" id="company-name" class="text-input">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" class="msgbox" rows="7"></textarea>
-
-                <button type="submit" class="join-button">Submit</button>
-            </form>
-
-        </section>
+        {% block content %}
+        {% endblock %}
 
         <!-- FOOTER SECTION -->
         <div id="footer">

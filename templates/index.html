@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+        <!-- COVER IMAGE -->
+        <div id="cover-outer">
+            <!-- <img src="assets/images/kasakana1.jpeg" alt="bottle picture" id="cover-image"> -->
+            <img src="{{ url_for('static', filename='images/kasakana1.jpeg')}}" alt="bottle picture" id="cover-image">
+            <div id="cover-text">
+                <p class="highlight">"The rhum equivalent of <strong>single malt whiskey.</strong>"</p>
+            </div>
+        </div>
+
+        <!-- WELCOME SECTION -->
+        <section id="welcome-text">
+            <div>
+                <h2>The First Philippine Rhum Agricole</h2>
+
+                <h2>Single Variety, Heirloom Strain</h2>
+                <p>The single variety that we use for our product is an heirloom strain. An heirloom strain is one that has not undergone any breeding programs, thus retaining the variety’s pureness, unlike hybrid varieties, which are bred to optimize production yield.</p>
+
+                <h2>TROPICAL AGING IN FRENCH OAK</h2>
+                <p>Our Rhum is allowed to age in select barrels of French Oak, imparting subtle and spicy ﬂavors alongside silky but ﬁrm tannins to the Rhum.</p>
+                <h2>Activated charcoal Filtered</h2>
+                <p>We use a steam activated, coconut husk charcoal which is the most natural way and material to go about the carbon. Filtered through this, our product is stripped of any possible off-ﬂavors or trace alcohols - the main culprits responsible for heavy hangovers.</p>
+
+            </div>
+        </section>
+
+{% endblock %}
