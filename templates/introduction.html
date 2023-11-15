@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-
+        <!-- NAV MENU -->
+        <nav id="menu">
+            <div><a href="{{ url_for('index') }}">Home</a></div>
+            <div class="active"><a href="{{ url_for('introduction') }}">About</a></div>
+            <div><a href="{{ url_for('marketing') }}">Marketing</a></div>
+            <div><a href="{{ url_for('branding') }}">Branding</a></div>
+            <div><a href="{{ url_for('contact') }}">Contact us</a></div>
+        </nav>
 
         <section class="intro-body">
             <h2>Introduction</h2>

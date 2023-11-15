@@ -7,6 +7,7 @@
 		<meta name="description" content="RainForest Distillers Inc.">
 		<meta name="keywords" content="rum, rhum, agricole, bukidnon, philippines">
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 
 		<title>RainForest Distillers</title>
@@ -15,19 +16,10 @@
 	<body>
         <!-- HEADER SECTION -->
         <header id="header">
-            <a href="{{ url_for('index') }}" id="rdi"><h1>RainForest Distillers, Inc.</h1></a>
+            <a href="{{ url_for('index') }}" id="rdi"><p id="rdi-title">RainForest Distillers, Inc.</p></a>
             <img src="{{ url_for('static', filename='images/rdilogo-02.png')}}" alt="RainForest Distillers, Inc." id="logo">
         </header>
 
-        <!-- NAV MENU -->
-        <nav id="menu">
-            <div class="active"><a href="{{ url_for('index') }}">Home</a></div>
-            <div><a href="{{ url_for('introduction') }}">About</a></div>
-            <div><a href="{{ url_for('marketing') }}">Marketing</a></div>
-            <div><a href="{{ url_for('branding') }}">Branding</a></div>
-            <div><a href="{{ url_for('contact') }}">Contact us</a></div>
-
-        </nav>
 
         {% block content %}
         {% endblock %}
@@ -59,6 +51,7 @@
 
         <!-- FONT SCRIPT -->
         <script src="https://kit.fontawesome.com/acf70f284f.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	</body>
 </html>
 

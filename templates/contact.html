@@ -1,6 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
 
+        <!-- NAV MENU -->
+        <nav id="menu">
+            <div><a href="{{ url_for('index') }}">Home</a></div>
+            <div><a href="{{ url_for('introduction') }}">About</a></div>
+            <div><a href="{{ url_for('marketing') }}">Marketing</a></div>
+            <div><a href="{{ url_for('branding') }}">Branding</a></div>
+            <div class="active"><a href="{{ url_for('contact') }}">Contact us</a></div>
+        </nav>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flashes">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>hmmm</p>
+            {% endif %}
+        {% endwith %}
+
+        
         <!-- CONTACT FORM -->
         <section class="form-section">
             <form method="POST" class="contact-form">
