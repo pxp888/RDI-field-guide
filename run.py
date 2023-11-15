@@ -26,7 +26,6 @@ def branding():
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        # print(request.form)
         flash("Thanks {}, we have received your message!".format(
             request.form.get("first_name")))
     return render_template("contact.html")

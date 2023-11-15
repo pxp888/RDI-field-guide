@@ -199,31 +199,18 @@ There is a suggestion that the contrast ratio for some text is too low.  Primari
 
 
 # Deployment
-The site is hosted on GitHub pages, and is deployed from the master branch.
+To deploy to a docker container along with nginx, you must first build the container.  
 
-As the site is essentially five static pages, Github Pages is sufficient for hosting the site and fulfilling required functionality.  
+~~~
+docker build -t my-flask-app .
+~~~
 
-The site can be viewed at [https://pxp888.github.io/RDI-field-guide/](https://pxp888.github.io/RDI-field-guide/)
+Then run the docker-compose file: 
+~~~
+docker-compose up -d
+~~~
 
-
-### Forking the GitHub Repository
-By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
-
-1.  Log in to GitHub and locate GitHub Repository [RDI-field-guide](https://github.com/pxp888/RDI-field-guide)
-2.  At the top of the Repository(under the main navigation) locate "Fork" button.
-3.  Now you should have a copy of the original repository in your GitHub account.
-
-### Local Clone
-
-1.  Log in to GitHub and locate GitHub Repository [RDI-field-guide](https://github.com/pxp888/RDI-field-guide)
-2.  Under the repository name click "Clone or download"
-3.  Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
-4.  Open Git Bash
-5.  Change the current working directory to the location where you want the cloned directory to be made.
-6.  Type git clone and then paste The URL copied in the step 3.
-7.  Press Enter and your local clone will be created.
-
-
+That's it!  You should have two running containers serving the site on port 80 of the host machine.  
 
 
 
