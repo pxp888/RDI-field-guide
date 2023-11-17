@@ -207,14 +207,12 @@ There are currently three aspects to the app.  The main web app is a flask app r
 ```mermaid 
 graph LR
 
-hr([Heroku])
+
 fa(Flask app)
-ec2([Amazon EC2])
 
 pg(postgres container)
 
-hr --> fa
-ec2 --> pg & ntfy(NTFY Server container)
+pg & ntfy(NTFY Server container)
 
 fa -.->  pg & ntfy
 fa <--> browser(browser)
@@ -222,6 +220,14 @@ fa <--> browser(browser)
 browser <--> user(user)
 pg & ntfy --> admin(admin)
 
+subgraph Heroku
+    fa
+end
+
+subgraph Amazon EC2
+    pg
+    ntfy
+end
 
 ```
 
