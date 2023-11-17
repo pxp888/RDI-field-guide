@@ -1,7 +1,7 @@
 
   
 
-![screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/screens1.webp)
+![screenshot](https://pxp888.github.io/RDI-field-guide/static/images/screens1.webp)
 
   
 
@@ -67,13 +67,13 @@ The site has a consistent color theme that is a tinted monotone with a single hi
 
 Otherwise, font and layout choices were largely inspired by the original document.  Below are some images from the original document to demonstrate.  
 
-![Original cover](assets/images/original-3.png)
+![Original cover](static/images/original-3.png)
 _Original Cover_
 
-![Original toc](assets/images/original-1.png)
+![Original toc](static/images/original-1.png)
 _Original Table of Contents_
 
-![Original content](assets/images/original-2.png)
+![Original content](static/images/original-2.png)
 _Original Content Sample_
 
 All photos used for the site also came from the original document. 
@@ -88,7 +88,7 @@ Lastly there is a contact page for receiving messages.
 There is a consistent header at the top of each page.  This shows the company name and logo at the top, and a navigation bar below that.  
 The navigation links react to mouse hovering, and the current page is indicated by a highlight color with partial opacity.  
 
-![logo](https://pxp888.github.io/RDI-field-guide/assets/images/rm-1.webp)
+![logo](https://pxp888.github.io/RDI-field-guide/static/images/rm-1.webp)
 
 *For example, the image above shows the header when looking at the contact page of the site.*
 
@@ -96,7 +96,7 @@ The navigation links react to mouse hovering, and the current page is indicated 
 The homepage is largely a single image, which has a slow zoom effect (taken from the "love running" example website).  
 There are some short textual descriptions of the product.  
 
-![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-2.webp)
+![homepage screenshot](https://pxp888.github.io/RDI-field-guide/static/images/rm-2.webp)
 
 
 ## Introduction, Marketing Direction, and Branding Pages
@@ -106,7 +106,12 @@ These are all static pages with relevant information presented.
 ## Contact page
 The final site page is a contact page for receiving messages.  
 
-![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-3.webp)
+![homepage screenshot](https://pxp888.github.io/RDI-field-guide/static/images/rm-3.webp)
+
+__Update as of 23-11-07:__ Messages sent through this form are forwarded to two destinations.  
+The first is a Postgres database running on an EC2 instance outside of this app.  
+The second is an NTFY server, also running on an EC2 instance.  This enables realtime notifications
+of user interaction.  
 
 
 ## Footer
@@ -117,7 +122,7 @@ The majority of the site responsiveness is provided by using flexbox containers.
 
 There are still some changes implemented through media querries for smaller screens. The main change is that two-column layouts are changed to single column layouts on certain pages.
 
-![homepage screenshot](https://pxp888.github.io/RDI-field-guide/assets/images/rm-4.webp)
+![homepage screenshot](https://pxp888.github.io/RDI-field-guide/static/images/rm-4.webp)
 
 
 
@@ -184,10 +189,10 @@ _(This is an area that requires further study and practice on my part. While I w
 I was able to achieve a 100% score for performance for  both Desktop and Mobile sites, but there were some issues that remain.  
 
 _Desktop lighthouse score:_
-![Desktop lighthouse report](assets/images/lighthouse1.webp)
+![Desktop lighthouse report](static/images/lighthouse1.webp)
 
 _Mobile lighthouse score:_
-![Mobile lighthouse report](assets/images/lighthouse2.webp)
+![Mobile lighthouse report](static/images/lighthouse2.webp)
 
 #### Performance Issues
 
@@ -199,20 +204,28 @@ There is a suggestion that the contrast ratio for some text is too low.  Primari
 
 
 # Deployment
-To deploy to a docker container along with nginx, you must first build the container.  
+There are currently three aspects to the app.  The main web app is a flask app running on Heroku.  Two other components are hosted separately.  The first is a Postgres database running in a docker container on Amazon EC2.  The second is an NTFY server, also running in a container on Amazon EC2.  These provide longterm storage of contact form submissions, and near realtime notifications of form submissions.  
 
-~~~
-docker build -t my-flask-app .
-~~~
+```mermaid 
+graph LR
 
-Then run the docker-compose file: 
-~~~
-docker-compose up -d
-~~~
+hr([Heroku])
+fa(Flask app)
+ec2([Amazon EC2])
 
-That's it!  You should have two running containers serving the site on port 80 of the host machine.  
+pg(postgres container)
+
+hr --> fa
+ec2 --> pg & ntfy(NTFY Server container)
+
+fa -.->  pg & ntfy
+fa <--> browser(browser)
+
+browser <--> user(user)
+pg & ntfy --> admin(admin)
 
 
+```
 
 
 
