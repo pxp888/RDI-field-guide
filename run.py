@@ -1,5 +1,6 @@
 import os
 import json
+import time
 from flask import Flask, render_template, request, flash
 import psycopg2
 import requests
@@ -50,6 +51,7 @@ def setupStorage():
     cur = conn.cursor()
     cur.execute('''CREATE TABLE IF NOT EXISTS contacts
         (ID SERIAL PRIMARY KEY,
+        PTIME TEXT,
         FNAME TEXT,
         LNAME TEXT,
         EMAIL TEXT,
@@ -62,7 +64,7 @@ def setupStorage():
 def saveMessage(data):
     conn = getDBConnection()
     cur = conn.cursor()
-    cur.execute("INSERT INTO contacts (FNAME, LNAME, EMAIL, COMPANY, MSG) VALUES (%s, %s, %s, %s, %s)", data)
+    cur.execute("INSERT INTO contacts (PTIME, FNAME, LNAME, EMAIL, COMPANY, MSG) VALUES (%s, %s, %s, %s, %s, %s)", data)
     conn.commit()
     cur.close()
 
@@ -73,7 +75,7 @@ def ntfy(data):
 
 
 def gotmsg(msg):
-    data = (msg["first_name"], msg["last_name"], msg["email"], msg["company-name"], msg["message"])
+    data = (str(time.asctime()), msg["first_name"], msg["last_name"], msg["email"], msg["company-name"], msg["message"])
     saveMessage(data)
     ntfy(data)
     # print(data)
