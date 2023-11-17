@@ -33,9 +33,7 @@
         * [Performance Issues](#performance-issues)
         * [Accessibility Issues](#accessibility-issues)
 *   [__Deployment__](#deployment)
-    * [Forking the GitHub Repository](#forking-the-github-repository)
-    * [Local Clone](#local-clone)
-
+    
 <br>
 
 ## what is it - Field guide for potential investors
