@@ -76,7 +76,7 @@ def ntfy(data):
 
 def gotmsg(msg):
     data = (str(time.asctime()), msg["first_name"], msg["last_name"], msg["email"], msg["company-name"], msg["message"])
-    saveMessage(data)
+    # saveMessage(data)
     ntfy(data)
     # print(data)
 
@@ -115,7 +115,7 @@ def contact():
 
 
 if __name__ == "__main__":
-    setupStorage()
+    # setupStorage()
 
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
